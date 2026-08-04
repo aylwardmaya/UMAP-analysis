@@ -8,6 +8,15 @@
 4. To generate UMAP plots, use `ManifoldPlot`
 - can restrict to certain plot conditions (ie. time, offer delay, value) or just show all of them
 5. To analyze plots, use `analysis` to obtain p values & graphs of distributions
+- current available conditions to analyze are:
+  1. time
+  2. offer delay
+  3. offer zone
+  4. wait zone
+  5. wait zone countdown
+  6. decision
+  7. value
+  8. track
 ## How the analysis works:
 - For continuous variables:
   1. points from task/behavior data are sampled & shuffled
