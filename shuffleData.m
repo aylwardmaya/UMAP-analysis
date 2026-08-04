@@ -38,8 +38,8 @@ end
 % subsample
 temp = find(valid);
 idx = randperm(length(temp), n_sample);
-embedding_sub = valid_embedding(temp(idx), :);
-behavior_sub = valid_behavior(temp(idx));
+embedding_sub = valid_embedding(idx, :);
+behavior_sub = valid_behavior(idx);
 
 % shuffle behavioral data only
 behavior_shuffled = behavior_sub(randperm(n_sample));
